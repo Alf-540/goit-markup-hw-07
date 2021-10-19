@@ -1,18 +1,3 @@
-.backdrop {
-  position: fixed;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: var(--modal-backdrop);
-  transition: opacity 300ms ease-in-out, visibility 300ms ease-in-out;
-}
-
-.backdrop.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-
 .modal {
   position: relative;
   width: 528px;
@@ -40,6 +25,10 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  &:focus .close-ico,
+  &:hover .close-ico {
+    fill: var(--accent-color);
+  }
 }
 
 .close-ico {
@@ -47,11 +36,6 @@
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.close-btn:focus .close-ico,
-.close-btn:hover .close-ico {
-  fill: var(--accent-color);
 }
 
 .modal-header {
@@ -116,25 +100,19 @@
   transition-property: border-color, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus {
+    border-color: var(--accent-color);
+  }
 }
 
 .input-window.name,
 .input-window.phone,
 .input-window.mail {
   height: 40px;
-}
-
-.input-window.name:focus,
-.input-window.phone:focus,
-.input-window.mail:focus,
-.input-window.textarea:focus {
-  border-color: var(--accent-color);
-}
-
-.input-window.name:focus + .modal-icon,
-.input-window.mail:focus + .modal-icon,
-.input-window.phone:focus + .modal-icon {
-  fill: var(--accent-color);
+  &:focus + .modal-icon {
+    fill: var(--accent-color);
+  }
 }
 
 .input-window.textarea {
@@ -168,17 +146,17 @@
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.agreement-text:checked + .craft-checkbox {
-  background-color: var(--accent-color);
-  fill: var(--secondary-title-color);
-  border: none;
-}
+  .agreement-text:checked + & {
+    background-color: var(--accent-color);
+    fill: var(--secondary-title-color);
+    border: none;
+  }
 
-.agreement-text:hover + .craft-checkbox,
-.agreement-text:focus + .craft-checkbox {
-  border-color: var(--accent-color);
+  .agreement-text:hover + &,
+  .agreement-text:focus + & {
+    border-color: var(--accent-color);
+  }
 }
 
 .agreement-link {
@@ -186,11 +164,11 @@
   text-decoration-line: underline;
   color: var(--accent-color);
   outline: none;
-}
 
-.agreement-link:focus {
-  outline: 2px solid var(--accent-color);
-  border-radius: 4px;
+  &:focus {
+    outline: 2px solid var(--accent-color);
+    border-radius: 4px;
+  }
 }
 
 .modal-check-pic {
@@ -220,11 +198,9 @@
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.modal-submit-button:hover,
-.modal-submit-button:focus,
-.submit-button:hover,
-.submit-button:focus {
-  background: var(--button-hover-color);
+  &:hover,
+  &:focus {
+    background: var(--button-hover-color);
+  }
 }

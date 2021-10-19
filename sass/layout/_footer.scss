@@ -20,6 +20,7 @@
 .logo-text {
   margin-bottom: 20px;
 }
+
 .street {
   all: initial;
   font-family: roboto, sans-serif;
@@ -29,11 +30,11 @@
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: var(--footer-logo-color);
-}
 
-.street:hover,
-.street:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .footer-link {
@@ -80,27 +81,25 @@
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
   margin: 0px;
+
+  &:not(:first-child) {
+    margin-left: 10px;
+  }
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    & > .social-icon {
+      fill: var(--secondary-title-color);
+    }
+  }
 }
 
-.footer-social-icon-bgd:not(:first-child) {
-  margin-left: 10px;
-}
 .footer-social-icon {
   background-size: cover;
   background-repeat: no-repeat;
   width: 20px;
   height: 20px;
   fill: var(--hero-text-color);
-}
-
-.footer-social-icon-bgd:hover,
-.footer-social-icon-bgd:focus {
-  background-color: var(--accent-color);
-}
-
-.footer-social-icon-bgd:hover > .social-icon,
-.footer-social-icon-bgd:focus > .social-icon {
-  fill: var(--secondary-title-color);
 }
 
 .footer-subscribe {
@@ -172,7 +171,13 @@
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background: var(--button-hover-color);
+  }
 }
+
 .footer-submit-icon {
   width: 24px;
   height: 24px;

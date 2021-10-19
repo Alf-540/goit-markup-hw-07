@@ -27,6 +27,7 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
+
 .hero-button {
   background-color: var(--accent-color);
   color: var(--hero-text-color);
@@ -47,9 +48,8 @@
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-}
-
-.hero-button:hover,
-.hero-button:focus {
-  background-color: var(--button-hover-color);
+  &:hover,
+  &:focus {
+    background-color: var(--button-hover-color);
+  }
 }

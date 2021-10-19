@@ -36,6 +36,7 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
+
 .team-card-photo {
   margin-bottom: 30px;
 }
@@ -70,6 +71,18 @@
   width: 44px;
   height: 44px;
   border-radius: 50%;
+
+  &:not(:first-child) {
+    margin-left: 10px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    & > .social-icon {
+      fill: var(--secondary-title-color);
+    }
+  }
 }
 
 .social-icon {
@@ -78,18 +91,4 @@
   width: 20px;
   height: 20px;
   fill: var(--svg-fill);
-}
-
-.social-icon-bgd:not(:first-child) {
-  margin-left: 10px;
-}
-
-.social-icon-bgd:hover,
-.social-icon-bgd:focus {
-  background-color: var(--accent-color);
-}
-
-.social-icon-bgd:hover > .social-icon,
-.social-icon-bgd:focus > .social-icon {
-  fill: var(--secondary-title-color);
 }
