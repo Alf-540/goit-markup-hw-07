@@ -5,8 +5,7 @@
 }
 
 .portfolio-filter {
-  display: flex;
-  justify-content: center;
+  @include flex();
   margin-bottom: 50px;
 }
 
@@ -17,12 +16,7 @@
   padding: 6px 22px;
   outline: none;
   background-color: var(--command-background-color);
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: calc(26 / 15);
-  text-align: center;
-  letter-spacing: 0.03em;
+  @include font(normal, 500, 16px, 26px, 0.03em);
   color: var(--primary-title-color);
   &:hover,
   &:focus {

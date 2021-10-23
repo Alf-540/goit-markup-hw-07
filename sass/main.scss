@@ -1,26 +1,7 @@
-@import 'base/reset';
-@import 'base/common';
+@import 'base/index';
 
-@import 'utils/colors';
-@import 'utils/mixins';
-@import 'utils/variables';
-@import 'utils/hidden';
+@import 'utils/index';
 
-@import 'components/link';
-@import 'components/btn';
-@import 'components/logo';
-@import 'components/container';
-@import 'components/backdrop';
-@import 'components/after-title';
-@import 'components/site-nav';
+@import 'components/index';
 
-@import 'layout/header';
-@import 'layout/hero';
-@import 'layout/work-direction';
-@import 'layout/occupation';
-@import 'layout/team';
-@import 'layout/customers';
-@import 'layout/footer';
-@import 'layout/filter';
-@import 'layout/works';
-@import 'layout/modal';
+@import 'layout/index';

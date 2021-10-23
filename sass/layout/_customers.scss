@@ -3,9 +3,7 @@
 }
 .customers-list {
   list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex();
 }
 
 .customers-list-item {
@@ -22,9 +20,7 @@
 }
 
 .customers-list-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex();
   width: inherit;
   height: inherit;
 
@@ -39,10 +35,6 @@
     }
   }
   & > .icon {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-
     background-color: var(--header-background-color);
     fill: var(--svg-fill);
     width: 106px;

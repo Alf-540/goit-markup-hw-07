@@ -21,11 +21,7 @@
 }
 
 .header-list {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: calc(16 / 14);
-  letter-spacing: 0.02em;
+  @include font(normal, 500, 14px, 16px, 00.02em);
   margin-left: 93px;
 }
 
@@ -34,11 +30,7 @@
   align-items: center;
 
   & .header-link {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: calc(16 / 14);
-    letter-spacing: 0.02em;
+    @include font(normal, 500, 14px, 16px, 00.02em);
     color: var(--primary-text-color);
   }
 
@@ -49,9 +41,7 @@
 }
 
 .header-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex;
   color: var(--primary-title-color);
   &:hover,
   &:focus,

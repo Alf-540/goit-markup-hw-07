@@ -3,11 +3,7 @@
   padding: 94px 0px;
 }
 .team-title {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 42px;
-  letter-spacing: 0.03em;
+  @include font(normal, bold, 36px, 42px, 00.03em);
   color: var(--primary-title-color);
 
   text-align: center;
@@ -16,9 +12,7 @@
 
 .team-list {
   display: flex;
-  align-items: center;
 
-  flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
 }
@@ -42,22 +36,15 @@
 }
 
 .team-card-header {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: calc(19 / 16);
-  letter-spacing: 0.03em;
+  @include font(normal, 500, 16px, 19px, 00.03em);
+
   color: var(--primary-title-color);
 
   margin-bottom: 10px;
 }
 
 .team-card-occupation {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: calc(19 / 16);
-  letter-spacing: 0.03em;
+  @include font(normal, normal, 16px, 19px, 00.03em);
   color: var(--primary-text-color);
   margin-bottom: 16px;
 }

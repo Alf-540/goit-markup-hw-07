@@ -8,12 +8,6 @@
 }
 
 .footer-logo {
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 26px;
-  line-height: calc(31 / 26);
-  letter-spacing: 0.03em;
   color: var(--footer-logo-color);
 }
 
@@ -22,15 +16,8 @@
 }
 
 .street {
-  all: initial;
-  font-family: roboto, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
+  @include font(normal, normal, 14px, 24px, 00.03em);
   color: var(--footer-logo-color);
-
   &:hover,
   &:focus {
     color: var(--accent-color);
@@ -38,11 +25,7 @@
 }
 
 .footer-link {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
+  @include font(normal, normal, 14px, 24px, 00.03em);
   color: var(--secondary-text-color);
 }
 
@@ -58,11 +41,7 @@
 
 .footer-icons-list {
   color: var(--hero-text-color);
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: calc(16 / 14);
-  letter-spacing: 0.03em;
+  @include font(normal, bold, 14px, 16px, 00.03em);
   text-transform: uppercase;
 }
 
@@ -108,12 +87,8 @@
 }
 
 .footer-subscribe-strong {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
+  @include font(normal, bold, 14px, 16px, 00.03em);
   text-transform: uppercase;
-
   color: var(--header-background-color);
 }
 
@@ -138,24 +113,14 @@
   padding: 15px 16px 15px 16px;
   outline: none;
 
-  font-style: inherit;
-  font-weight: inherit;
-  font-size: 16px;
-  line-height: calc(20 / 16);
-  letter-spacing: 0.03em;
-
+  @include font(normal, 400, 16px, 20px, 00.03em);
   color: rgba(255, 255, 255, 0.6);
 }
 
 .submit-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex();
   outline-style: none;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: calc(30 / 16);
-  letter-spacing: 0.06em;
+  @include font(normal, bold, 16px, 30px, 0.06em);
   background-color: var(--accent-color);
   color: var(--header-background-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);

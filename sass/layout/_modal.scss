@@ -21,9 +21,7 @@
   right: 8px;
   background-color: transparent;
   border: 1px solid var(--modal-btn-border);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex();
   cursor: pointer;
   &:focus .close-ico,
   &:hover .close-ico {
@@ -39,17 +37,14 @@
 }
 
 .modal-header {
-  display: inline-block;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: calc(23 / 20);
+  display: block;
+  @include font(normal, bold, 20px, 23px, 00.03em);
   text-align: center;
-  letter-spacing: 0.03em;
   margin-bottom: 12px;
 }
 
 .modal-form {
-  display: inline-block;
+  display: block;
   width: 448px;
   color: var(--primary-text-color);
 }
@@ -93,10 +88,8 @@
   cursor: pointer;
   margin-top: 4px;
   color: var(--primary-text-color);
-  font-weight: normal;
-  font-size: 12px;
-  line-height: calc(14 / 12);
-  letter-spacing: 0.01em;
+  @include font(normal, normal, 12px, 14px, 00.01em);
+
   transition-property: border-color, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -127,10 +120,8 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
+  @include font(normal, normal, 14px, 24px, 00.03em);
+
   margin-bottom: 30px;
   cursor: pointer;
 }
@@ -180,11 +171,9 @@
   display: block;
   border-style: none;
   outline-style: none;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: calc(30 / 16);
-  text-align: center;
-  letter-spacing: 0.06em;
+
+  @include font(normal, bold, 16px, 30px, 00.06em);
+
   background-color: var(--accent-color);
   color: var(--header-background-color);
   margin: 0 auto;
@@ -195,6 +184,7 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
   padding: 0;
+
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

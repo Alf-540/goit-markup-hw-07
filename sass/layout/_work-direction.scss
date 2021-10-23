@@ -3,9 +3,7 @@
 }
 
 .direction-img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex();
   background-color: var(--command-background-color);
 
   width: 270px;
@@ -30,22 +28,15 @@
 }
 
 .direction-title {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: calc(16 / 14);
-  letter-spacing: 0.03em;
+  @include font(normal, bold, 14px, 16px, 0.03em);
   text-transform: uppercase;
+
   color: var(--primary-title-color);
   margin-top: 30px;
 }
 
 .direction-text {
   margin-top: 10px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
+  @include font(normal, normal, 14px, 24px, 00.03em);
   color: var(--primary-text-color);
 }
