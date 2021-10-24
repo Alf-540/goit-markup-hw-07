@@ -4,7 +4,7 @@
   padding-right: 15px;
 }
 
-.occupation-title {
+.occupation__title {
   @include font(normal, bold, 36px, 42px, 00.03em);
 
   color: var(--primary-title-color);
@@ -13,7 +13,7 @@
   margin-bottom: 50px;
 }
 
-.occupation-item {
+.occupation__item {
   padding: 0;
   margin: 0;
   border: 0;
@@ -28,7 +28,7 @@
   }
 }
 
-.occupation-description {
+.occupation__description {
   @include flex();
 
   position: absolute;
@@ -44,6 +44,6 @@
   background-color: var(--occupation-background);
 }
 
-.occupation-list {
+.occupation__list {
   display: flex;
 }

@@ -1,15 +1,15 @@
-.works {
+.work {
   display: flex;
   margin-top: -30px;
   margin-left: -30px;
   flex-wrap: wrap;
 }
 
-.portfolio-img {
+.work__img {
   display: block;
 }
 
-.works-list-item {
+.work__list-item {
   flex-basis: calc((100% / 3) - 30px);
   margin-left: 30px;
   margin-top: 30px;
@@ -33,28 +33,28 @@
     overflow: hidden;
   }
 
-  &:hover .works-card-description {
+  &:hover .work__card-description {
     transform: translateY(0);
   }
 }
 
-.project-name-description {
+.work__name-description {
   border: 1px solid var(--border-cards-color);
   border-top: none;
   padding: 20px 24px;
 }
 
-.works-header {
+.work__card-header {
   @include font(normal, bold, 18px, 36px, 0.06em);
   color: var(--primary-title-color);
 }
 
-.works-text {
+.work__card-text {
   @include font(normal, normal, 16px, 30px, 00.03em);
   color: var(--primary-text-color);
 }
 
-.works-card-description {
+.work__card-description {
   @include flex();
   padding: 64px 24px;
 

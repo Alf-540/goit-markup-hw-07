@@ -36,14 +36,14 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-header {
+.modal__header {
   display: block;
   @include font(normal, bold, 20px, 23px, 00.03em);
   text-align: center;
   margin-bottom: 12px;
 }
 
-.modal-form {
+.modal__form {
   display: block;
   width: 448px;
   color: var(--primary-text-color);
@@ -138,19 +138,19 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  .agreement-text:checked + & {
+  .modal__agreement-text:checked + & {
     background-color: var(--accent-color);
     fill: var(--secondary-title-color);
     border: none;
   }
 
-  .agreement-text:hover + &,
-  .agreement-text:focus + & {
+  .modal__agreement-text:hover + &,
+  .modal__agreement-text:focus + & {
     border-color: var(--accent-color);
   }
 }
 
-.agreement-link {
+.modal__agreement-link {
   text-decoration: none;
   text-decoration-line: underline;
   color: var(--accent-color);
@@ -162,12 +162,12 @@
   }
 }
 
-.modal-check-pic {
+.modal__check-pic {
   width: 11px;
   height: 8px;
 }
 
-.modal-submit-button {
+.modal__submit-button {
   display: block;
   border-style: none;
   outline-style: none;

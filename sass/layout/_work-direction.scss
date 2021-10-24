@@ -2,7 +2,7 @@
   padding: 94px 0px;
 }
 
-.direction-img {
+.direction__img {
   @include flex();
   background-color: var(--command-background-color);
 
@@ -10,24 +10,24 @@
   height: 120px;
 }
 
-.direction-container {
+.direction__container {
   display: flex;
 }
 
-.direction-list {
+.direction__list {
   display: flex;
 }
 
-.direction-lis {
+.direction__description {
   width: 270px;
   margin-left: 0px;
 }
 
-.direction-list-item:not(:first-child) {
+.direction__item:not(:first-child) {
   margin-left: 30px;
 }
 
-.direction-title {
+.direction__description-title {
   @include font(normal, bold, 14px, 16px, 0.03em);
   text-transform: uppercase;
 
@@ -35,7 +35,7 @@
   margin-top: 30px;
 }
 
-.direction-text {
+.direction__description-text {
   margin-top: 10px;
   @include font(normal, normal, 14px, 24px, 00.03em);
   color: var(--primary-text-color);

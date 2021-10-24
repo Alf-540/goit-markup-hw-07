@@ -3,61 +3,54 @@
   padding: 60px 0px;
 }
 
-.footer-container {
+.footer__container {
   display: flex;
 }
 
-.footer-logo {
-  color: var(--footer-logo-color);
+.footer__logo {
+  color: var(--footer__logo-color);
 }
 
 .logo-text {
   margin-bottom: 20px;
 }
 
-.street {
+.footer__street {
   @include font(normal, normal, 14px, 24px, 00.03em);
-  color: var(--footer-logo-color);
+  color: var(--footer__logo-color);
   &:hover,
   &:focus {
     color: var(--accent-color);
   }
 }
 
-.footer-link {
+.footer__link {
   @include font(normal, normal, 14px, 24px, 00.03em);
   color: var(--secondary-text-color);
 }
 
-.footer-mail {
+.footer__mail {
   margin-top: 9px;
   margin-bottom: 9px;
 }
 
-.footer-social-block {
+.footer__social-block {
   margin-left: 70px;
   padding-top: 12px;
 }
 
-.footer-icons-list {
+.footer__icons-list-appeal {
   color: var(--hero-text-color);
   @include font(normal, bold, 14px, 16px, 00.03em);
   text-transform: uppercase;
 }
 
-.footer-social-icons {
+.footer__soc-ico-container {
   margin-top: 20px;
 }
 
-.footer-social-icon-bgd {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0px;
-  border: 0px;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
+.footer__social-icon-bgd {
+  @include soc-ico-bgd();
   background: rgba(255, 255, 255, 0.1);
   margin: 0px;
 
@@ -73,7 +66,7 @@
   }
 }
 
-.footer-social-icon {
+.footer__soc-ico {
   background-size: cover;
   background-repeat: no-repeat;
   width: 20px;
@@ -81,22 +74,22 @@
   fill: var(--hero-text-color);
 }
 
-.footer-subscribe {
+.footer__subscribe {
   margin-left: auto;
   padding-top: 12px;
 }
 
-.footer-subscribe-strong {
+.footer__subscribe-appeal {
   @include font(normal, bold, 14px, 16px, 00.03em);
   text-transform: uppercase;
   color: var(--header-background-color);
 }
 
-.subscribe-form {
+.footer__subscribe-form {
   display: inline-flex;
 }
 
-.footer-subscribe-input {
+.footer__subscribe-input {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -143,7 +136,7 @@
   }
 }
 
-.footer-submit-icon {
+.footer__submit-icon {
   width: 24px;
   height: 24px;
   fill: var(--hero-text-color);

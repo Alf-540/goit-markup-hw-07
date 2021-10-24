@@ -1,15 +1,15 @@
-.portfolio-section {
+.portfolio {
   background-color: var(--secondary-title-color);
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.portfolio-filter {
+.portfolio__filter {
   @include flex();
   margin-bottom: 50px;
 }
 
-.portfolio-button {
+.portfolio__button {
   font-family: inherit;
   border: none;
   border-radius: 4px;
@@ -27,16 +27,16 @@
   }
 }
 
-.portfolio-list-item {
+.portfolio__filter-item {
   &:not(:first-child) {
     margin-left: 8px;
   }
-  & > .portfolio-button {
+  & > .portfolio__button {
     padding: 6px 22px;
   }
 }
 
-.portfolio-button,
+.portfolio__button,
 .button {
   cursor: pointer;
 }
